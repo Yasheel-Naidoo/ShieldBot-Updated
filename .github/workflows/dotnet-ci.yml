@@ -1,0 +1,26 @@
+name: .NET Core Desktop CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest # Required for WPF/Desktop apps
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore NuGet Dependencies
+      run: dotnet restore
+
+    - name: Compile Application Build
+      run: dotnet build --no-restore
