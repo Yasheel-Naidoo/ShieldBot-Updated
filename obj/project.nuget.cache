@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DJ+VdSux8MA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\naido\\OneDrive\\Desktop\\ShieldBot\\ShieldBot\\ShieldBot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\naido\\.nuget\\packages\\system.speech\\10.0.8\\system.speech.10.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
